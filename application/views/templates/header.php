@@ -39,7 +39,7 @@
             <a class="nav-link" href="<?php echo base_url(); ?>artworks/add">Add artwork</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url(); ?>artists/create">Add artists</a>
+            <a class="nav-link" href="<?php echo base_url(); ?>artists/add">Add artists</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url(); ?>users/logout">Logout</a>

@@ -8,7 +8,7 @@
 			$query = $this->db->get('artist');
 			return $query->result_array();
 		}
-		public function create_artist(){
+		public function add_artist(){
 			$data = array(
         'first_name' => $this->input->post('first_name'),
         'last_name' => $this->input->post('last_name'),
