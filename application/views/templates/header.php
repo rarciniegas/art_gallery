@@ -23,7 +23,7 @@
             <a class="nav-link" href="<?php echo base_url(); ?>artists">Artists</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo base_url(); ?>artists">Artworks</a>
+            <a class="nav-link" href="<?php echo base_url(); ?>artworks">Artworks</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url(); ?>about">About</a>
