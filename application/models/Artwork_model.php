@@ -8,7 +8,7 @@
 			$query = $this->db->get('artwork');
 			return $query->result_array();
 		}
-		public function add_artwork(){
+		public function add_artwork($artwork_image){
 			$data = array(
         'title' => $this->input->post('title'),
         'artist_id' => $this->input->post('artist_id'),
@@ -18,6 +18,7 @@
 				'subject' => $this->input->post('subject'),
 				'collection' => $this->input->post('collection'),
 				'location' => $this->input->post('location'),
+				'image' => $artwork_image
 
 
 				//'user_id' => $this->session->userdata('user_id')

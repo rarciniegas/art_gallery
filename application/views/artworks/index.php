@@ -1,10 +1,19 @@
-<div class="col-md-6 mx-auto">
-  <div class="card card-body bg-light mt-5">
-		<h2><?= $title ;?></h2>
-    <ul class="list-group">
-      <?php foreach($artworks as $artwork) : ?>
-	       <li class="list-group-item"><?php echo $artwork['title']; ?></a></li>
-       <?php endforeach; ?>
-    </ul>
+<div class="container">
+<h2><?= $title ?></h2>
+<?php foreach($artworks as $artwork) : ?>
+  <h3><?php echo $artwork['title']; ?></h3>
+  <div class="row">
+    <div class="col-md-3">
+      <img class="post-thumb" src="<?php echo site_url(); ?>assets/images/<?php echo $artwork['image']; ?>">
+    </div>
+    <div class="col-md-9">
+      <?php echo $artwork['description']; ?>
+			<?php echo $artwork['created']; ?>
+      <?php echo $artwork['medium']; ?>
+      <?php echo $artwork['subject']; ?>
+      <?php echo $artwork['collection']; ?>
+      <?php echo $artwork['location']; ?>
+    </div>
   </div>
+<?php endforeach; ?>
 </div>
